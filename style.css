@@ -5,6 +5,7 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 .seccion {
     height: 100vh;
     width: 100%;
@@ -16,7 +17,8 @@
 
 #logo h3 {
     color: rgb(255,255,255);
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     
 }
 
@@ -26,7 +28,7 @@ header {
     display: flex;
     justify-content: space-around;
     /* *background-color: rgb(242, 242, 242); */
-    background: linear-gradient(-3deg,rgba(	97, 97, 97,0.3) -10%, rgba(2,0,36,1) 35%,	rgb(13,71,161) 90%);
+    background: linear-gradient(-3deg,rgba( 48, 68, 128) -10%, rgba(58, 78, 138) 35%,	rgb(38, 58, 118) 90%);
     box-shadow: 0px 2px 6px 1px whitesmoke;
     z-index: 3;
 }
@@ -80,6 +82,8 @@ nav ul li a {
     text-shadow: 0px -1px black;
     letter-spacing: 2px;
     font-family: 'Ubuntu', sans-serif;
+    transition: 0.4s all; 
+    
 }
 
 nav ul li {
@@ -120,6 +124,16 @@ nav ul li a:focus::after {
     -webkit-transform: translateX(0px);
     -moz-transform: translateX(0px);
     transform: translateX(0px);
+}
+
+nav ul li a:hover{
+    color: rgb(179, 184, 199);
+    
+}
+
+nav ul li a:active{
+    color: rgb(179, 184, 199);
+    
 }
 
 #slider{
@@ -163,7 +177,7 @@ nav ul li a:focus::after {
     height: 92vh;
     margin-top: 2px;
     padding-top: 75px;
-    background: linear-gradient(-3deg,rgba(	97, 97, 97,0.3) -10%, rgba(2,0,36,1) 35%,	rgb(13,71,161) 90%);
+    background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%);
 }
 @keyframes cambio{
     0%{margin-left: 0%;}
@@ -229,7 +243,7 @@ nav ul li a:focus::after {
     }
 
     header nav{
-        background-color: rgba(194, 194, 163, 0.3);
+        background-color: rgba(200, 200, 173, 0.7);
         position: absolute;
         height: 50vh;
         width: 30%;
@@ -238,6 +252,7 @@ nav ul li a:focus::after {
         min-width: 200px;
         border-bottom: 2px solid darkblue;
         border-left: 2px solid darkblue;
+        position: fixed;
         
     }
     
@@ -247,6 +262,12 @@ nav ul li a:focus::after {
         height: 50%;
         margin-top: 80px;
     }
+
+    nav ul li a {
+        color: rgb(30,30,55);
+        
+    }
+
     header button{
         transform: translateY(0%);
         z-index: 9;
