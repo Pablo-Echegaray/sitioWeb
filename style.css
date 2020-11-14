@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+html{
+    scroll-behavior: smooth;
+  }
+
 .seccion {
     height: 100vh;
     width: 100%;
@@ -179,6 +185,78 @@ nav ul li a:active{
     padding-top: 75px;
     background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%);
 }
+
+.segunda{
+    background-color: rgb(99, 164, 214);
+    text-align: center;
+    padding-top: 20px;
+}
+
+.segunda div h1 {
+    font-family: 'Stalinist One', cursive;
+}
+
+.productos {
+    height: 43vh;
+    margin-top: 13px;
+    background-color: darkgoldenrod;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tarjeta{
+    height: 90%;
+    width: 18%;
+    border-radius: 8px;
+    padding-top: 4px;
+    min-width: 150px;
+    background-color: darkolivegreen;
+    
+}
+
+.tarjeta .foto{
+    height: 72%;
+    width: 98%;
+    background-color: darkred;
+    border-radius: 8px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.tarjeta .descripcion{
+    height: 25%;
+    margin-top: 4px;
+    padding-top: 20px;
+    background-color: darkslateblue;
+}
+
+#tejida{
+    background-image: url(img/tejida.jpg);
+}
+
+#extruida{
+    background-image: url(img/extruida.jpg);
+}
+
+#protectora{
+    background-image: url(img/protectora.jpg);
+}
+
+#garlic{
+    background-image: url(img/garlic.jpg);
+}
+
+#precintos{
+    background-image: url(img/precintos.jpg);
+}
+
+#esponja{
+    background-image: url(img/esponja1edit.jpg);
+}
+
 @keyframes cambio{
     0%{margin-left: 0%;}
     30%{margin-left: 0%;}
