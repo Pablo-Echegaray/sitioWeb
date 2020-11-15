@@ -211,7 +211,9 @@ nav ul li a:active{
     border-radius: 8px;
     padding-top: 4px;
     min-width: 150px;
+    cursor: pointer;
     background-color: darkolivegreen;
+    transition: 0.3s all;
     
 }
 
@@ -230,7 +232,13 @@ nav ul li a:active{
     height: 25%;
     margin-top: 4px;
     padding-top: 20px;
+    border-radius: 6px;
     background-color: darkslateblue;
+}
+
+.tarjeta:hover{
+    height: 95%;
+    border: 2px solid white;
 }
 
 #tejida{
@@ -286,17 +294,29 @@ nav ul li a:active{
     header nav ul {
         width: 85%;
     }
+
+    .tarjeta{
+        width: 20%;
+    }
 }
 
 @media (max-width: 1206px) {
     header nav ul {
         width: 89%;
     }
+
+    .tarjeta{
+        width: 21%;
+    }
 }
 
 @media (max-width: 1050px) {
     header nav ul {
         width: 90%;
+    }
+
+    .tarjeta{
+        width: 22%;
     }
 }
 
@@ -313,6 +333,11 @@ nav ul li a:active{
         width: 75%;
         height: 400px;
     }
+    
+    .tarjeta{
+        width: 24%;
+    }
+    
 }
 
 @media (max-width: 750px){
@@ -357,11 +382,25 @@ nav ul li a:active{
     #logo h3{
         display: none;
     }
+
+    .tarjeta{
+        width: 26%;
+    }
+}
+
+@media (max-width: 690px){
+    .tarjeta{
+        width: 29%;
+    }
 }
 
 @media (max-width: 590px) {
     header nav  {
         left: 66%;
+    }
+
+    .tarjeta{
+        width: 32%;
     }
 }
 
@@ -369,11 +408,66 @@ nav ul li a:active{
     header nav  {
         left: 60%;
     }
+
+    .segunda{
+        height: 150vh;
+    }
+
+    .productos{
+        height: 68vh;
+    }
+
+    .tarjeta{
+        height: 63%;
+        width: 45%;
+    }
+
+    .tarjeta:hover{
+        height: 63.7%;
+    }
+
+    .segunda article:first-of-type{
+        background-color: darkturquoise;
+        align-items: flex-start
+    }
+
+    .segunda article:last-child{
+        background-color: firebrick;
+        align-items: flex-end;
+    }
+
+    .segunda article:first-of-type div:nth-child(3){
+        position: absolute;
+        height: 42.84vh;
+        top: 1210px;
+        left: 2.8%;
+    }
+    
+    #ajos{
+        position: absolute;
+        height: 42.84vh;
+        top: 1210px;
+        left: 52.7%;
+    }
+    
+
 } 
 
 @media (max-width: 440px) {
     header nav {
         left: 53%;
+    }
+
+    .tarjeta{
+        width: 47%;
+    }
+
+    .segunda article:first-of-type div:nth-child(3){
+        left: 1.5%;
+    }
+    
+    #ajos{
+        left: 51.5%;
     }
 }
 
@@ -386,6 +480,14 @@ nav ul li a:active{
 @media (max-width: 330px) {
     header nav  {
         left: 39%;
+    }
+
+    .segunda article:first-of-type div:nth-child(3){
+        left: 1%;
+    }
+    
+    #ajos{
+        left: 51%;
     }
 }
 
