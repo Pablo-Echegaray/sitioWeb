@@ -151,7 +151,7 @@ nav ul li a:active{
     animation-fill-mode: backwards;
     box-shadow: 3px 3px 3px 1px black;
     min-width: 300px;
-    height: 590px;
+    height: 70vh;
     border-radius: 12px;
 }
 
@@ -189,7 +189,6 @@ nav ul li a:active{
 .segunda{
     background-color: rgb(99, 164, 214);
     text-align: center;
-    padding-top: 20px;
 }
 
 .segunda div h1 {
@@ -198,7 +197,6 @@ nav ul li a:active{
 
 .productos {
     height: 43vh;
-    margin-top: 13px;
     background-color: darkgoldenrod;
     display: flex;
     justify-content: space-around;
@@ -206,7 +204,7 @@ nav ul li a:active{
 }
 
 .tarjeta{
-    height: 90%;
+    height: 100%;
     width: 18%;
     border-radius: 8px;
     padding-top: 4px;
@@ -237,8 +235,12 @@ nav ul li a:active{
 }
 
 .tarjeta:hover{
-    height: 95%;
+    height: 101%;
     border: 2px solid white;
+}
+
+.segunda article:last-child{
+    padding: 0;
 }
 
 #tejida{
@@ -290,6 +292,8 @@ nav ul li a:active{
     }
 }
 
+
+
 @media (max-width: 1220px) {
     header nav ul {
         width: 85%;
@@ -320,6 +324,26 @@ nav ul li a:active{
     }
 }
 
+@media (max-width: 1030px) {
+    header nav ul {
+        width: 90%;
+    }
+
+    .tarjeta{
+        width: 23%;
+    }
+}
+
+@media (max-width: 1024px) {
+    header nav ul {
+        width: 70%;
+    }
+
+    .tarjeta{
+        width: 27%;
+    }
+}
+
 @media (max-width: 900px) {
     header nav ul {
         width: 100%;
@@ -340,6 +364,16 @@ nav ul li a:active{
     
 }
 
+@media (max-width: 780px){
+   .tarjeta{
+       width: 32%;
+   }
+
+   .segunda article:last-child{
+    margin-top: 8%;
+    }
+}
+
 @media (max-width: 750px){
     header{
         justify-content: space-around;
@@ -356,6 +390,7 @@ nav ul li a:active{
         border-bottom: 2px solid darkblue;
         border-left: 2px solid darkblue;
         position: fixed;
+        z-index: 9;
         
     }
     
@@ -410,7 +445,7 @@ nav ul li a:active{
     }
 
     .segunda{
-        height: 150vh;
+        height: 146.5vh;
     }
 
     .productos{
@@ -439,14 +474,16 @@ nav ul li a:active{
     .segunda article:first-of-type div:nth-child(3){
         position: absolute;
         height: 42.84vh;
-        top: 1210px;
-        left: 2.8%;
+        top: 155.61%;
+        /* top: 155.6vh; */
+        left: 3%;
     }
     
     #ajos{
         position: absolute;
         height: 42.84vh;
-        top: 1210px;
+        top: 155.61%;
+        /* top: 155.6vh; */
         left: 52.7%;
     }
     
@@ -484,6 +521,60 @@ nav ul li a:active{
 
     .segunda article:first-of-type div:nth-child(3){
         left: 1%;
+        top: 158.6%;
+    }
+    
+    #ajos{
+        left: 51%;
+        top: 158.6%;
+    }
+}
+
+@media (max-width: 320px) {
+    header nav  {
+        left: 39%;
+    }
+
+    .segunda article:first-of-type div:nth-child(3){
+        left: 1.5%;
+        top: 158.6%;
+    }
+    
+    #ajos{
+        left: 51.5%;
+        top: 158.6%;
+    }
+}
+
+@media (max-width: 290px) {
+    header nav  {
+        left: 30%;
+    }
+
+    #slider{
+        min-width: 270px;
+    }
+
+    .segunda div h1 {
+        font-size: 1rem;
+    }
+
+    .tarjeta{
+        width: 47.5%;
+        min-width: 120px;
+    }
+
+    .segunda article:first-of-type, .segunda article:last-child{
+        justify-content: flex-start;
+    }
+
+    .segunda article:first-of-type div:first-child, .segunda article:last-child div:nth-child(2) {
+        margin-right: 2%;
+        margin-left: 1.6%;
+    }
+
+    .segunda article:first-of-type div:nth-child(3){
+        left: 1.5%;
     }
     
     #ajos{
@@ -491,8 +582,162 @@ nav ul li a:active{
     }
 }
 
-@media (max-width: 290px) {
-    header nav  {
-        left: 30%;
+/* --------------------------------------------------------------------------------------------- */
+
+@media (max-height: 1380px){
+    .segunda article:last-child{
+     margin-top: 3%;
+    }
+}
+
+@media (max-height: 830px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 154%;
+    }
+    
+    #ajos{
+        
+        top: 154%;
+    }
+
+    .segunda article:last-child{
+        *padding-bottom: 2%;
+    }
+}
+
+@media (max-height: 814px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 153.3%;
+    }
+    
+    #ajos{
+        
+        top: 153.3%;
+    }
+
+    .segunda article:last-child{
+        *padding-bottom: 2%;
+    }
+}
+
+@media (max-height: 760px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 155.7%;
+    }
+    
+    #ajos{
+        
+        top: 155.7%;
+    }
+
+    .segunda article:last-child{
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-height: 740px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 154%;
+    }
+    
+    #ajos{
+        
+        top: 154%;
+    }
+
+    .segunda article:last-child{
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-height: 735px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 154%;
+    }
+    
+    #ajos{
+        
+        top: 154%;
+    }
+
+    .segunda article:last-child{
+        padding-bottom: 2%;
+    }
+}
+
+@media (max-height: 680px){
+
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 154.5%;
+    }
+    
+    #ajos{
+        
+        top: 154.5%;
+    }
+
+    .segunda article:last-child{
+        padding-bottom: 2%;
+    }
+}
+
+/*  */
+@media (max-height: 660px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 153%;
+    }
+    
+    #ajos{
+        
+        top: 153%;
+    }
+    
+    .segunda article:last-child{
+        height: 69vh;
+        padding-bottom: 3%;
+    }
+
+    .segunda article:last-child .tarjeta:nth-child(2), .segunda article:last-child .tarjeta:last-child{
+        height: 62%;
+    }
+}
+/*  */
+
+@media (max-height: 650px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 155%;
+    }
+    
+    #ajos{
+        
+        top: 155%;
+    }
+
+    .segunda article:last-child{
+        padding-bottom: 4%;
+    }
+}
+
+@media (max-height: 575px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 156.5%;
+    }
+    
+    #ajos{
+        
+        top: 156.5%;
+    }
+
+    .segunda article:last-child{
+        padding-bottom: 2%;
     }
 }
