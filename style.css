@@ -209,6 +209,7 @@ nav ul li a:active{
     border-radius: 8px;
     padding-top: 4px;
     min-width: 150px;
+    max-width: 200px;
     cursor: pointer;
     background-color: darkolivegreen;
     transition: 0.3s all;
@@ -310,7 +311,13 @@ nav ul li a:active{
     }
 
     .tarjeta{
-        width: 21%;
+        width: 17%;
+    }
+}
+
+@media (max-width: 1170px) {
+    .tarjeta{
+        width: 19%;
     }
 }
 
@@ -320,7 +327,7 @@ nav ul li a:active{
     }
 
     .tarjeta{
-        width: 22%;
+        width: 20%;
     }
 }
 
@@ -330,17 +337,27 @@ nav ul li a:active{
     }
 
     .tarjeta{
-        width: 23%;
+        width: 22%;
     }
 }
 
 @media (max-width: 1024px) {
     header nav ul {
-        width: 70%;
+        width: 90%;
     }
 
     .tarjeta{
-        width: 27%;
+        width: 23%;
+    }
+}
+
+@media (max-width: 950px){
+    header nav ul {
+        width: 90%;
+    }
+
+    .tarjeta{
+        width: 22%;
     }
 }
 
@@ -366,7 +383,7 @@ nav ul li a:active{
 
 @media (max-width: 780px){
    .tarjeta{
-       width: 32%;
+       width: 27%;
    }
 
    .segunda article:last-child{
@@ -454,7 +471,7 @@ nav ul li a:active{
 
     .tarjeta{
         height: 63%;
-        width: 45%;
+        width: 41%;
     }
 
     .tarjeta:hover{
@@ -476,7 +493,7 @@ nav ul li a:active{
         height: 42.84vh;
         top: 155.61%;
         /* top: 155.6vh; */
-        left: 3%;
+        left: 4.9%;
     }
     
     #ajos{
@@ -484,7 +501,7 @@ nav ul li a:active{
         height: 42.84vh;
         top: 155.61%;
         /* top: 155.6vh; */
-        left: 52.7%;
+        left: 54.6%;
     }
     
 
@@ -545,6 +562,23 @@ nav ul li a:active{
         top: 158.6%;
     }
 }
+
+/* @media (max-width: 305px){
+    .tarjeta{
+        width: 46%;
+        min-width: 120px;
+    }
+
+    .segunda article:first-of-type div:nth-child(3){
+        left: 1.5%;
+        top: 158.6%;
+    }
+    
+    #ajos{
+        left: 51.5%;
+        top: 158.6%;
+    }
+} */
 
 @media (max-width: 290px) {
     header nav  {
@@ -691,22 +725,22 @@ nav ul li a:active{
 @media (max-height: 660px){
     .segunda article:first-of-type div:nth-child(3){
         
-        top: 153%;
+        top: 152%;
     }
     
     #ajos{
         
-        top: 153%;
+        top: 152%;
     }
     
-    .segunda article:last-child{
+    /* .segunda article:last-child{
         height: 69vh;
         padding-bottom: 3%;
     }
 
     .segunda article:last-child .tarjeta:nth-child(2), .segunda article:last-child .tarjeta:last-child{
         height: 62%;
-    }
+    } */
 }
 /*  */
 
