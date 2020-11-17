@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Ubuntu:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
 
 * {
     box-sizing: border-box;
@@ -187,13 +188,16 @@ nav ul li a:active{
 }
 
 .segunda{
-    background-color: rgb(99, 164, 214);
+    background-color: rgba(99, 164, 214, 0.97);
     text-align: center;
     padding-top: 0.3em;
 }
 
 .segunda div h1 {
     font-family: 'Stalinist One', cursive;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    opacity: 0.93;
 }
 
 .productos {
@@ -209,7 +213,7 @@ nav ul li a:active{
 }
 
 .segunda article:last-child{
-    background-color: rgba(99, 164, 214, 1);
+    background-color: rgba(99, 164, 214, 0.9);
 }
 
 .tarjeta{
@@ -241,9 +245,16 @@ nav ul li a:active{
 .tarjeta .descripcion{
     height: 27%;
     margin-top: 4px;
-    padding-top: 20px;
+    display: flex;
     border-radius: 6px;
     border: 0.5px solid white;
+}
+
+.tarjeta .descripcion p{
+    margin: auto;
+    color: whitesmoke;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    letter-spacing: 3px;
 }
 
 .tarjeta:hover{
@@ -536,9 +547,28 @@ nav ul li a:active{
     }
 }
 
+@media (max-width: 415px) {
+    .segunda div h1 {
+        font-size: 1.05rem;
+    }
+
+    .tarjeta .descripcion p{
+        font-size: 0.89rem;
+    }
+}
+
 @media (max-width: 380px) {
     header nav  {
         left: 47%;
+    }
+
+    .segunda div h1 {
+        font-size: 1rem;
+    }
+
+    .tarjeta .descripcion p{
+        font-size: 0.85rem;
+        color: whitesmoke;
     }
 }
 
@@ -571,6 +601,10 @@ nav ul li a:active{
     #ajos{
         left: 51.5%;
         top: 158.6%;
+    }
+
+    .tarjeta .descripcion p{
+        font-size: 0.75rem;
     }
 }
 
@@ -610,6 +644,15 @@ nav ul li a:active{
     #ajos{
         left: 51%;
     }
+
+    .segunda div h1 {
+        font-size: 0.95rem;
+    }
+
+    .tarjeta .descripcion p{
+        font-size: 0.75rem;
+        color: whitesmoke;
+    }
 }
 
 /* --------------------------------------------------------------------------------------------- */
@@ -636,15 +679,31 @@ nav ul li a:active{
     }
 }
 
-@media (max-height: 814px){
+@media (max-height: 823px){
     .segunda article:first-of-type div:nth-child(3){
         
-        top: 155%;
+        top: 153.5%;
     }
     
     #ajos{
         
-        top: 155%;
+        top: 153.5%;
+    }
+
+    .segunda article:last-child{
+        *padding-bottom: 3%;
+    }
+}
+
+@media (max-height: 814px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 153.6%;
+    }
+    
+    #ajos{
+        
+        top: 153.6%;
     }
 
     .segunda article:last-child{
@@ -671,12 +730,12 @@ nav ul li a:active{
 @media (max-height: 740px){
     .segunda article:first-of-type div:nth-child(3){
         
-        top: 156%;
+        top: 154.3%;
     }
     
     #ajos{
         
-        top: 156%;
+        top: 154.3%;
     }
 
     .segunda article:last-child{
@@ -687,12 +746,12 @@ nav ul li a:active{
 @media (max-height: 735px){
     .segunda article:first-of-type div:nth-child(3){
         
-        top: 156%;
+        top: 154.3%;
     }
     
     #ajos{
         
-        top: 156%;
+        top: 154.3%;
     }
 
     .segunda article:last-child{
@@ -721,12 +780,12 @@ nav ul li a:active{
 
     .segunda article:first-of-type div:nth-child(3){
         
-        top: 156.8%;
+        top: 154.8%;
     }
     
     #ajos{
         
-        top: 156.8%;
+        top: 154.8%;
     }
 }
 /*  */
@@ -779,19 +838,30 @@ nav ul li a:active{
     }
 }
 
-@media (max-height: 575px){
+@media (max-height: 641px){
     .segunda article:first-of-type div:nth-child(3){
         
-        top: 158.1%;
+        top: 155%;
     }
     
     #ajos{
         
-        top: 158.1%;
+        top: 155%;
+    }
+}
+
+@media (max-height: 575px){
+    .segunda article:first-of-type div:nth-child(3){
+        
+        top: 155.7%;
+    }
+    
+    #ajos{
+        
+        top: 155.7%;
     }
 
     .segunda article:last-child{
         padding-bottom: 7%;
-        background-color: rgba(99, 164, 214, 1);
     }
 }
