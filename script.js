@@ -14,4 +14,18 @@ let intervalo = setInterval(() => {
   if (counter === texto.length) {
     clearInterval(intervalo);
   }
-}, 100);
+}, 200);
+
+let menu = document.querySelector(".material-icons");
+let drawer = document.querySelector("#drawer");
+let contador = 0;
+menu.addEventListener("click", function (e) {
+  e.stopPropagation();
+  if (contador === 0) {
+    drawer.style.display = "block";
+    contador = 1;
+  } else {
+    drawer.style.display = "none";
+    contador = 0;
+  }
+});

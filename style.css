@@ -150,10 +150,12 @@ nav ul li a:active{
     animation-name: movimiento;
     animation-duration: 1000ms ;
     animation-fill-mode: backwards;
+    
     box-shadow: 3px 3px 3px 1px black;
     min-width: 300px;
     height: 70vh;
     border-radius: 8px;
+    
 }
 
 #slider ul{
@@ -589,6 +591,9 @@ nav ul li a:active{
         border-left: 2px solid darkblue;
         position: fixed;
         z-index: 9;
+        display: none;
+        
+        
         
     }
     
@@ -606,7 +611,7 @@ nav ul li a:active{
 
     header button{
         transform: translateY(0%);
-        z-index: 9;
+        z-index: 12;
         border: none;
         background: transparent;
         
@@ -640,6 +645,19 @@ nav ul li a:active{
 @media (max-width: 590px) {
     header nav  {
         left: 66%;
+    }
+
+    .tarjeta{
+        width: 32%;
+    }
+}
+
+@media (max-width: 534px) {
+    #slider{
+        width: 98%;
+    }
+    .primera #containSlide span{
+        width: 70%;  
     }
 
     .tarjeta{
@@ -696,6 +714,24 @@ nav ul li a:active{
 
 } 
 
+@media (max-width: 460px) {
+    #slider {
+        height: 400px;
+    }
+
+    #slider img {
+        height: 400px;
+    }
+
+    .primera #containSlide span{
+        width: 70%;  
+    }
+
+    .tarjeta{
+        width: 32%;
+    }
+}
+
 @media (max-width: 440px) {
     header nav {
         left: 53%;
@@ -721,6 +757,18 @@ nav ul li a:active{
 
     .tarjeta .descripcion p{
         font-size: 0.89rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #slider{
+        width: 93%;
+        height: 360px;
+    }
+
+    .primera #containSlide span{
+        width: 80%; 
+        font-size: 0.78rem;
     }
 }
 
@@ -773,6 +821,18 @@ nav ul li a:active{
     .tarjeta .descripcion p{
         font-size: 0.75rem;
     }
+
+    #slider{
+        margin-right: 6px;
+        width: 87%;
+        height: 330px;
+    }
+
+    .primera #containSlide span{
+        width: 80%; 
+        font-size: 0.78rem;
+        margin-bottom: 20px;
+    }
 }
 
 /*  */
@@ -784,6 +844,12 @@ nav ul li a:active{
 
     #slider{
         min-width: 270px;
+        margin-right: 11px;
+    }
+
+    .primera #containSlide span{
+        width: 90%; 
+        font-size: 0.68rem;
     }
 
     .segunda div h1 {
