@@ -424,6 +424,33 @@ nav ul li a:active{
      padding: 10px;
  }
 
+#contain-scroll{
+    height: 15%;
+    width: 4%;
+    position: fixed;
+    left: 95.85%;
+    top: 50%;
+    
+}
+
+ .btn-scroll{
+     height: 40%;
+     width: 90%;
+     background-color: white;
+     border-radius: 80%;
+     margin: auto;
+     background-image: url(/img/scroll.png);
+     background-position: 49% 0;
+
+ }
+ .up{
+     margin-bottom: 30%;
+ }
+
+ .down{
+    background-position: 49% 105%;
+ }
+
 @keyframes cambio{
     0%{margin-left: 0%;}
     30%{margin-left: 0%;}

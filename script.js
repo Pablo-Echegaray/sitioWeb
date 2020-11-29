@@ -21,6 +21,14 @@ let drawer = document.querySelector("#drawer");
 let contador = 0;
 menu.addEventListener("click", function (e) {
   e.stopPropagation();
+  cambiar();
+});
+
+/* drawer.addEventListener("click", (e) => {
+  e.stopPropagation;
+}); */
+
+function cambiar() {
   if (contador === 0) {
     drawer.style.display = "block";
     contador = 1;
@@ -28,4 +36,4 @@ menu.addEventListener("click", function (e) {
     drawer.style.display = "none";
     contador = 0;
   }
-});
+}
