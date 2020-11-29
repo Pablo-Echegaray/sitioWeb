@@ -451,6 +451,21 @@ nav ul li a:active{
     background-position: 49% 105%;
  }
 
+ #drawer{
+    background-color: rgba(200, 200, 173, 0.7);
+    position: absolute;
+    height: 50vh;
+    width: 30%;
+    left: 70%;
+    border-radius: 8px;
+    min-width: 200px;
+    border-bottom: 2px solid darkblue;
+    border-left: 2px solid darkblue;
+    position: fixed;
+    z-index: 9;
+    display: none;     
+}
+
 @keyframes cambio{
     0%{margin-left: 0%;}
     30%{margin-left: 0%;}
@@ -606,7 +621,10 @@ nav ul li a:active{
         justify-content: space-around;
     }
 
-    header nav{
+    header nav:nth-child(3){
+        display: none;
+    }
+    #drawer{
         background-color: rgba(200, 200, 173, 0.7);
         position: absolute;
         height: 50vh;
@@ -618,20 +636,17 @@ nav ul li a:active{
         border-left: 2px solid darkblue;
         position: fixed;
         z-index: 9;
-        display: none;
-        
-        
-        
+        display: none;     
     }
     
-    header nav ul{
+    #drawer ul{
         flex-direction: column;
         justify-content: space-around;
         height: 50%;
         margin-top: 80px;
     }
 
-    nav ul li a {
+    #drawer ul li a {
         color: rgb(30,30,55);
         
     }
@@ -670,7 +685,7 @@ nav ul li a:active{
 }
 
 @media (max-width: 590px) {
-    header nav  {
+    #drawer  {
         left: 66%;
     }
 
@@ -693,7 +708,7 @@ nav ul li a:active{
 }
 
  @media (max-width: 510px) {
-    header nav  {
+    #drawer {
         left: 60%;
     }
 
@@ -800,7 +815,7 @@ nav ul li a:active{
 }
 
 @media (max-width: 380px) {
-    header nav  {
+    #drawer {
         left: 47%;
     }
 
@@ -815,7 +830,7 @@ nav ul li a:active{
 }
 
 @media (max-width: 330px) {
-    header nav  {
+    #drawer  {
         left: 39%;
     }
 
@@ -831,7 +846,7 @@ nav ul li a:active{
 }
 
 @media (max-width: 320px) {
-    header nav  {
+    #drawer  {
         left: 39%;
     }
 
@@ -865,7 +880,7 @@ nav ul li a:active{
 /*  */
 
 @media (max-width: 290px) {
-    header nav  {
+    #drawer  {
         left: 30%;
     }
 

@@ -24,9 +24,10 @@ menu.addEventListener("click", function (e) {
   cambiar();
 });
 
-/* drawer.addEventListener("click", (e) => {
+drawer.addEventListener("click", (e) => {
   e.stopPropagation;
-}); */
+  drawer.style.display = "none";
+});
 
 function cambiar() {
   if (contador === 0) {
