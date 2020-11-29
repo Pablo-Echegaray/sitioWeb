@@ -434,21 +434,26 @@ nav ul li a:active{
 }
 
  .btn-scroll{
-     height: 40%;
-     width: 90%;
+     height: 35%;
+     width: 75%;
+     min-width: 40px;
+     min-height: 38px;
      background-color: white;
-     border-radius: 80%;
+     border: 1px dashed black;
+     border-radius: 30%;
      margin: auto;
      background-image: url(/img/scroll.png);
-     background-position: 49% 0;
+     background-position: 49% -15%;
 
  }
  .up{
      margin-bottom: 30%;
+     top: calc(50% - 50%);
  }
 
  .down{
-    background-position: 49% 105%;
+    background-position: 49% 120%;
+    top: calc(50% - 0);
  }
 
  #drawer{
