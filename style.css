@@ -424,37 +424,54 @@ nav ul li a:active{
      padding: 10px;
  }
 
-#contain-scroll{
-    height: 15%;
-    width: 4%;
+.go-top-container{
     position: fixed;
-    left: 95.85%;
-    top: 50%;
-    
+    top: 70%;
+    left: 97%;
+    width: 3rem;
+    height: 3rem;
+    z-index: -1;
+    *background-color: yellow;
 }
 
- .btn-scroll{
-     height: 35%;
-     width: 75%;
-     min-width: 40px;
-     min-height: 38px;
-     background-color: white;
-     border: 1px dashed black;
-     border-radius: 30%;
-     margin: auto;
-     background-image: url(/img/scroll.png);
-     background-position: 49% -15%;
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    *background-color: #2071b2;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
 
- }
- .up{
-     margin-bottom: 30%;
-     top: calc(50% - 50%);
- }
+.go-top-button i{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #fff;
+    transition: -2s;
+}
 
- .down{
-    background-position: 49% 120%;
-    top: calc(50% - 0);
- }
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 2.0rem;
+    height: 2.0rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
 
  #drawer{
     background-color: rgba(200, 200, 173, 0.7);
@@ -490,6 +507,13 @@ nav ul li a:active{
     from{transform: translateX(500px);}
     to{transform: translateX(15px);}
 }
+
+@keyframes popup{
+    0%{width: 0rem; height: 0rem;}
+    50%{width: 3.5rem; height: 3.5rem;}
+    100%{width: 2.5rem; height: 2.5rem;}
+}
+
 @media (max-width: 1400px) {
     header nav ul {
         width: 70%;
