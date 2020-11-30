@@ -711,6 +711,12 @@ nav ul li a:active{
     #slider{
         width: 90%;
     }
+
+    .go-top-container{
+        top: 70%;
+        left: 93%;
+        
+    }
 }
 
 @media (max-width: 590px) {
