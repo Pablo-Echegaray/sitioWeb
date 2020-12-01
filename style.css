@@ -328,6 +328,9 @@ nav ul li a:active{
     width: 80%;
     background-color: whitesmoke;
     border-radius: 8px;
+    background-image: url(img/cube-background-2484131_1920.jpg);
+    *background-position: 210% 340%;/*fondoEjecutivo*/
+    background-position: center center;
 }
 
 #cerrarModal{
@@ -350,11 +353,11 @@ nav ul li a:active{
     justify-content: space-between;
     padding-right: 10%;
     border-radius: 8px;
-    background-image: url(img/fondoRedRoja.jpg);
+    *background-image: url(img/fondoRedRoja.jpg);
 }
 
 #imagenes h1 {
-    
+    color: white;
     align-self: center;
 }
 
@@ -413,16 +416,19 @@ nav ul li a:active{
  #texto {
      height: 43%;
      width: 99%;
-     padding: 15px;
-     margin-left: 5px;
+     padding: 30px;
+     margin: 0 0 0px 5px;
      *text-align: center;
      overflow: auto;
      *background-color: yellow;
      border-radius: 8px;
+     color: white;
+     
  }
 
  #texto ol{
      padding: 10px;
+     color: white;
  }
 
 .go-top-container{
