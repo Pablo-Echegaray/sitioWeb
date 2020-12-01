@@ -85,22 +85,52 @@ tarjetas.forEach((tarjeta) => {
       case "Red Extruida":
         /* cambiarH1(texto_interno); */
         arrRutaImg = ["redExtruida2.jpg", "redExtruida3.jpg"];
+        contenidoModal(
+          texto_interno,
+          arrRutaImg,
+          objTextos.texto2,
+          matrizLista[1]
+        );
         break;
       case "Red Protectora":
         /* cambiarH1(texto_interno); */
         arrRutaImg = ["redProtectora3.jpg", "redProtectora2.png"];
+        contenidoModal(
+          texto_interno,
+          arrRutaImg,
+          objTextos.texto3,
+          matrizLista[2]
+        );
         break;
       case "Red para Ajo":
         /* cambiarH1(texto_interno); */
         arrRutaImg = ["RedParaAjo1.jpg", "RedParaAjo3.jpg"];
+        contenidoModal(
+          texto_interno,
+          arrRutaImg,
+          objTextos.texto4,
+          matrizLista[3]
+        );
         break;
       case "Precintos":
         /* cambiarH1(texto_interno); */
         arrRutaImg = ["precintos2.jpg", "precintos3.jpg"];
+        contenidoModal(
+          texto_interno,
+          arrRutaImg,
+          objTextos.texto5,
+          matrizLista[4]
+        );
         break;
       case "Esponja SPA":
         /* cambiarH1(texto_interno); */
         arrRutaImg = ["esponja2.jpg", "esponja3.jpg"];
+        contenidoModal(
+          texto_interno,
+          arrRutaImg,
+          objTextos.texto6,
+          matrizLista[5]
+        );
         break;
     }
   });

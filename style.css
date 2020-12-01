@@ -350,6 +350,7 @@ nav ul li a:active{
     justify-content: space-between;
     padding-right: 10%;
     border-radius: 8px;
+    background-image: url(img/fondoRedRoja.jpg);
 }
 
 #imagenes h1 {
@@ -412,9 +413,9 @@ nav ul li a:active{
  #texto {
      height: 43%;
      width: 99%;
-     padding: 20px;
+     padding: 15px;
      margin-left: 5px;
-     text-align: center;
+     *text-align: center;
      overflow: auto;
      *background-color: yellow;
      border-radius: 8px;
@@ -643,6 +644,12 @@ nav ul li a:active{
         font-size: 1rem;
         
     }
+
+    #cerrarModal{
+        height: 37px;
+        width: 60px;
+        margin-right: 5px;
+    }
 }
 
 @media (max-width: 750px){
@@ -862,6 +869,7 @@ nav ul li a:active{
         font-size: 0.85rem;
         color: whitesmoke;
     }
+
 }
 
 @media (max-width: 330px) {
