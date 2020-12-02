@@ -143,6 +143,10 @@ nav ul li a:active{
     
 }
 
+.primera{
+    background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%);
+}
+
 #slider{
     width: 80%;
     margin: auto;
@@ -151,9 +155,9 @@ nav ul li a:active{
     animation-duration: 1000ms ;
     animation-fill-mode: backwards;
     
-    box-shadow: 3px 3px 3px 1px black;
+    *box-shadow: 3px 3px 3px 1px black;
     min-width: 300px;
-    height: 70vh;
+    height: 65vh;
     border-radius: 8px;
     
 }
@@ -183,26 +187,33 @@ nav ul li a:active{
 }
 
 #containSlide{
-    height: 92vh;
+    
     margin-top: 2px;
     *padding-top: 75px;
-    padding-bottom: 30px;
-    background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%);
-    display: flex;
+    *padding-bottom: 30px;
+    /* background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%); */
+    /* display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
+    background-color: black;
 }
 
-.primera #containSlide span{
-    height: 80px;
-    width: 40%;
+#marquesina{
+    height: 12%;
+    width: 30%;
     padding: 10px;
+    margin: 0 auto;
     word-wrap: break-word;
     text-align: center;
     letter-spacing: 4px;
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 6px;
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translateX(-45%);
+    
 }
 
 .segunda{
@@ -319,6 +330,7 @@ nav ul li a:active{
     width: 100%;
     padding-top: 13px;
     background-color: rgba(0, 0, 0, 0.6);
+    align-items: center;
 }
 
 #ventana{
@@ -331,6 +343,7 @@ nav ul li a:active{
     background-image: url(img/cube-background-2484131_1920.jpg);
     *background-position: 210% 340%;/*fondoEjecutivo*/
     background-position: center center;
+    overflow: auto;
 }
 
 #cerrarModal{
@@ -419,7 +432,7 @@ nav ul li a:active{
      padding: 30px;
      margin: 0 0 0px 5px;
      *text-align: center;
-     overflow: auto;
+     
      *background-color: yellow;
      border-radius: 8px;
      color: white;
@@ -581,8 +594,48 @@ nav ul li a:active{
     }
 
     .tarjeta{
-        width: 23%;
+        height: 90%;
+        width: 26%;
     }
+
+    #slider {
+        height: 60vh;
+        width: 90%;
+    }
+
+    #slider img{
+    
+        width: 77%;
+        height: 840px;
+    }
+
+    #marquesina{
+        height: 10%;
+        width: 60%;
+        font-size: 1.8rem;
+    }
+
+    #ventana{
+        height: 92vh;
+        width: 82%;
+    }
+
+    #imagenes{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #texto{
+        letter-spacing: 3px;
+        font-size: 1.5rem;
+    }
+
+    .slider{
+        width: 80%;
+        height: 500px;
+        top: 10%;
+        left: 15%;
+      }
 }
 
 @media (max-width: 950px){
@@ -596,7 +649,7 @@ nav ul li a:active{
 }
 
 @media (max-width: 929px){
-    .primera #containSlide span{
+    #marquesina{
         margin-bottom: -10px;
         font-size: 0.94rem;
         
@@ -621,7 +674,7 @@ nav ul li a:active{
         width: 24%;
     }
 
-    .primera #containSlide span{
+    #marquesina{
         height: 85px;
         width: 40%;
         margin-bottom: -10px;
@@ -651,11 +704,31 @@ nav ul li a:active{
         
     }
 
+    #marquesina{
+        height: 12%;
+        width: 70%;
+        font-size: 1.6rem;
+    }
+
     #cerrarModal{
         height: 37px;
         width: 60px;
         margin-right: 5px;
     }
+}
+
+@media (max-width: 770px){
+    #imagenes{
+        height: 70%;
+        display: flex;
+        justify-content: space-between; 
+    }
+
+    .slider{
+        width: 100%;
+        top: 5%;
+        left: 5.5%;
+      }
 }
 
 @media (max-width: 750px){
@@ -717,7 +790,7 @@ nav ul li a:active{
 }
 
 @media(max-width: 675px){
-    .primera #containSlide span{
+    #marquesina{
         width: 50%;  
     }
 
@@ -746,7 +819,7 @@ nav ul li a:active{
     #slider{
         width: 98%;
     }
-    .primera #containSlide span{
+    #marquesina{
         width: 70%;  
     }
 
@@ -813,7 +886,7 @@ nav ul li a:active{
         height: 400px;
     }
 
-    .primera #containSlide span{
+    #marquesina{
         width: 70%;  
     }
 
@@ -848,6 +921,58 @@ nav ul li a:active{
     .tarjeta .descripcion p{
         font-size: 0.89rem;
     }
+
+    #marquesina{
+        height: 20%;
+        width: 90%;
+        font-size: 1.15rem;
+        top: 70%;
+        padding-top: 6%;
+    }
+
+    #modal{
+        height: 150vh;
+    }
+
+    #ventana{
+    
+        height: 145vh;
+        width: 98%;
+        margin: auto;
+    }
+    
+    #cerrarModal{
+        height: 37px;
+        width: 60px;
+        color: white;
+        border-radius: 4px;
+        font-size: 0.80rem;
+        position: absolute;
+        left: 80%;
+        
+    }
+    
+    #imagenes{
+        height: 47%;
+    }
+    
+    #imagenes h1{
+        font-size: 1.6rem;
+    }
+
+    .slider{
+        width: 100%;
+        height: 380px;
+        top: 10%;
+        left: 6%;
+      }
+
+      #texto {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 20px 0 0px 2px;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -856,7 +981,7 @@ nav ul li a:active{
         height: 360px;
     }
 
-    .primera #containSlide span{
+    #marquesina{
         width: 80%; 
         font-size: 0.78rem;
     }
@@ -867,6 +992,25 @@ nav ul li a:active{
         left: 47%;
     }
 
+    #slider {
+        height: 50vh;
+        width: 100%;
+    }
+
+    #slider img{
+    
+        width: 77%;
+        height: 400px;
+    }
+
+    #marquesina{
+        height: 20%;
+        width: 96%;
+        font-size: 1.2rem;
+        top: 70%;
+        padding-top: 8%;
+    }
+
     .segunda div h1 {
         font-size: 1rem;
     }
@@ -874,6 +1018,45 @@ nav ul li a:active{
     .tarjeta .descripcion p{
         font-size: 0.85rem;
         color: whitesmoke;
+    }
+     
+    #ventana{
+    
+        height: 95vh;
+        width: 98%;
+        margin: auto;
+    }
+    
+    #cerrarModal{
+        height: 37px;
+        width: 60px;
+        color: white;
+        border-radius: 4px;
+        font-size: 0.80rem;
+        position: absolute;
+        left: 80%;
+        
+    }
+    
+    #imagenes{
+        height: 70%;
+    }
+    
+    #imagenes h1{
+        font-size: 1.6rem;
+    }
+
+    .slider{
+        width: 100%;
+        height: 380px;
+        top: 10%;
+        left: 6%;
+      }
+
+      #texto {
+        font-size: 1rem;
+        padding: 10px;
+        margin: 20px 0 0px 2px;
     }
 
 }
@@ -919,7 +1102,7 @@ nav ul li a:active{
         height: 330px;
     }
 
-    .primera #containSlide span{
+    #marquesina{
         width: 80%; 
         font-size: 0.78rem;
         margin-bottom: 20px;
@@ -927,6 +1110,13 @@ nav ul li a:active{
 }
 
 /*  */
+
+@media (max-width: 301px){
+    #marquesina{
+        width: 85%; 
+        font-size: 0.70rem;
+    }
+}
 
 @media (max-width: 290px) {
     #drawer  {
@@ -938,7 +1128,7 @@ nav ul li a:active{
         margin-right: 11px;
     }
 
-    .primera #containSlide span{
+    #marquesina{
         width: 90%; 
         font-size: 0.68rem;
     }

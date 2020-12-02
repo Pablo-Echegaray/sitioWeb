@@ -2,7 +2,7 @@
 //Efecto marquesina el en span "envios a todo el pais"
 let texto = "¡ Envios - a - todo - el - pais ! - Comunicate - al - 1111111111";
 
-let span = document.querySelector("#containSlide").childNodes[3];
+let span = document.querySelector("#marquesina");
 console.log(span);
 span.innerText = "";
 let counter = 0;
