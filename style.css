@@ -149,12 +149,11 @@ nav ul li a:active{
 
 #slider{
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
     *box-shadow: 3px 3px 3px 1px black;
     min-width: 300px;
     height: 65vh;
-    border-radius: 8px;
     
 }
 
@@ -187,13 +186,10 @@ nav ul li a:active{
     animation-duration: 1000ms ;
     animation-fill-mode: backwards;
     margin-top: 2px;
-    *padding-top: 75px;
-    *padding-bottom: 30px;
+    *padding-right: 5px;
     /* background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%); */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center; */
+    display: flex;
+    justify-content: center;
     background-color: black;
 }
 
@@ -694,10 +690,10 @@ nav ul li a:active{
 }
 
 @media(max-width: 808px){
-    .primera #containSlide span{
+    /* #marquesina{
         font-size: 0.84rem;
         
-    }
+    } */
 }
 
 @media (max-width: 780px){
@@ -820,14 +816,67 @@ nav ul li a:active{
         left: 66%;
     }
 
+    #slider img {
+        height: 450px;
+    }
+
     .tarjeta{
         width: 32%;
+    }
+
+    #marquesina{
+        height: 14%;
+        width: 80%; 
+        font-size: 1.1rem;
+        padding-top: 20px;
+    }
+
+    #modal{
+        height: 150vh;
+        align-items: flex-start;
+    }
+     
+    #ventana{
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    #cerrarModal{
+        height: 28px;
+        width: 51px;
+        color: white;
+        border-radius: 2px;
+        font-size: 0.67rem;
+        position: absolute;
+        left: 80%;
+        
+    }
+    
+    #imagenes{
+        height: 55%;
+    }
+    
+    #imagenes h1{
+        font-size: 1rem;
+    }
+
+    .slider{
+        width: 80%;
+        height: 270px;
+        top: 10%;
+        left: 15%;
+      }
+
+      #texto {
+        font-size: 0.77rem;
+        padding: 10px;
+        margin: 15px 0 0px 2px;
     }
 }
 
 @media (max-width: 534px) {
     #slider{
-        width: 98%;
+        width: 90%;
     }
     #marquesina{
         width: 70%;  
@@ -964,7 +1013,7 @@ nav ul li a:active{
     }
     
     #imagenes{
-        height: 50%;
+        height: 53%;
     }
     
     #imagenes h1{
@@ -981,14 +1030,14 @@ nav ul li a:active{
       #texto {
         font-size: 0.77rem;
         padding: 10px;
-        margin: 0px 0 0px 2px;
+        margin: 16px 0 0px 2px;
     }
 
 }
 
 @media (max-width: 400px) {
     #slider{
-        width: 93%;
+        width: 90%;
         height: 360px;
     }
 
@@ -1005,7 +1054,7 @@ nav ul li a:active{
 
     #slider {
         height: 50vh;
-        width: 100%;
+        width: 90%;
     }
 
     #slider img{
@@ -1015,7 +1064,7 @@ nav ul li a:active{
     }
 
     #marquesina{
-        height: 20%;
+        height: 18%;
         width: 96%;
         font-size: 1rem;
         top: 70%;
@@ -1100,7 +1149,7 @@ nav ul li a:active{
     }
     
     #imagenes{
-        height: 60%;
+        height: 50%;
     }
     
     #imagenes h1{
@@ -1136,6 +1185,14 @@ nav ul li a:active{
         left: 51%;
         top: 158.6%;
     }
+
+    #imagenes{
+        height: 60%;
+    }
+
+    .slider{
+        height: 240px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1158,8 +1215,7 @@ nav ul li a:active{
     }
 
     #slider{
-        margin-right: 6px;
-        width: 87%;
+        width: 80%;
         height: 330px;
     }
 
@@ -1185,11 +1241,11 @@ nav ul li a:active{
     }
 
     #slider{
-        min-width: 270px;
-        margin-right: 11px;
+        width: 100%;
     }
 
     #marquesina{
+        height: 14%;
         width: 90%; 
         font-size: 0.68rem;
     }
@@ -1228,6 +1284,13 @@ nav ul li a:active{
         font-size: 0.75rem;
         color: whitesmoke;
     }
+    
+    #imagenes{
+        height: 50%;
+    }
+    .slider{
+        height: 220px;
+      }
 }
 
 /* --------------------------------------------------------------------------------------------- */
