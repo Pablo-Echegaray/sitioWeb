@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
 * {
     box-sizing: border-box;
@@ -222,6 +223,7 @@ nav ul li a:active{
 .segunda div h1 {
     font-family: 'Stalinist One', cursive;
     font-size: 1.5rem;
+    letter-spacing: 3px;
     color: whitesmoke;
     opacity: 0.93;
 }
@@ -316,6 +318,37 @@ nav ul li a:active{
 
 #esponja{
     background-image: url(img/esponja1edit.jpg);
+}
+
+.tercera{
+    background-image: url(img/fondoNegroRed.jpg);
+    color:white;
+    display: flex;
+    flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+}
+
+.tercera h2{
+    margin-top: 30px;
+    font-family: 'Stalinist One', cursive;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+}
+
+.tercera article{
+    height: 75vh;
+    width: 80%;
+    margin: auto 0 auto 0;
+    letter-spacing: 2px;
+    padding: 12px 6px 6px 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 6px;
+    border: 2px outset white;
+    color: black;
+    min-width: 400px;
+    max-width: 850px;
+    overflow: auto;
 }
 
 #modal {
@@ -621,6 +654,10 @@ nav ul li a:active{
         font-size: 1.8rem;
     }
 
+    .tercera article{
+        font-size: 1.45rem;
+    }
+
     #ventana{
         height: 92vh;
         width: 82%;
@@ -724,6 +761,10 @@ nav ul li a:active{
 }
 
 @media (max-width: 770px){
+    .tercera article{
+        font-size: 1.05rem;
+    }
+
     #imagenes{
         height: 70%;
         display: flex;
@@ -829,6 +870,14 @@ nav ul li a:active{
         width: 80%; 
         font-size: 1.1rem;
         padding-top: 20px;
+    }
+
+    .tercera h2{
+        font-size: 1.5rem;
+    }
+
+    .tercera article{
+        font-size: 0.8rem;
     }
 
     #modal{
@@ -989,6 +1038,14 @@ nav ul li a:active{
         padding-top: 6%;
     }
 
+    .tercera article{
+        font-size: 0.89rem;
+    }
+
+    .tercera h2{
+        font-size: 1.15rem;
+    }
+
     #modal{
         height: 150vh;
         align-items: flex-start;
@@ -1080,6 +1137,14 @@ nav ul li a:active{
         color: whitesmoke;
     }
 
+    .tercera h2 {
+        font-size: 1.3rem;
+    }
+
+    .tercera article{
+        font-size: 0.85rem;
+    }
+
     #modal{
         align-items: flex-start;
     }
@@ -1126,6 +1191,15 @@ nav ul li a:active{
 }
 
 @media (max-width: 380px){
+.tercera h2{
+    font-size: 1.2rem;
+}
+
+    .tercera article{
+        font-size: 0.75rem;
+        min-width: 350px;
+    }
+
     #modal{
         align-items: flex-start;
     }
@@ -1193,6 +1267,10 @@ nav ul li a:active{
     .slider{
         height: 240px;
     }
+
+    .tercera article{
+       min-width: 300px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1250,10 +1328,6 @@ nav ul li a:active{
         font-size: 0.68rem;
     }
 
-    .segunda div h1 {
-        font-size: 1rem;
-    }
-
     .tarjeta{
         width: 47.5%;
         min-width: 120px;
@@ -1283,6 +1357,15 @@ nav ul li a:active{
     .tarjeta .descripcion p{
         font-size: 0.75rem;
         color: whitesmoke;
+    }
+     
+    .tercera h2{
+        font-size: 0.95rem;
+    }
+
+    .tercera article{
+        font-size: 0.75rem;
+        min-width: 270px;
     }
     
     #imagenes{
