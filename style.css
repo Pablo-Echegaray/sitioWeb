@@ -327,6 +327,8 @@ nav ul li a:active{
     flex-direction: column;
    justify-content: flex-start;
    align-items: center;
+   background-repeat: no-repeat;
+   background-size: 100%;
 }
 
 .tercera h2{
