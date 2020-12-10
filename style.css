@@ -321,36 +321,69 @@ nav ul li a:active{
 }
 
 .tercera{
-    background-image: url(img/fondoNegroRed.jpg);
-    color:white;
+    *background-image: url(img/fondoNegroRed.jpg);
+    background: linear-gradient(-3deg,rgba(	140, 166, 241, 0.1) -10%, rgba(150, 176, 251) 35%,rgba(155, 181, 255 ) 90%);
+    color:black;
     display: flex;
     flex-direction: column;
-   justify-content: flex-start;
+   justify-content: space-around;
    align-items: center;
    background-repeat: no-repeat;
    background-size: 100%;
 }
 
 .tercera h2{
-    margin-top: 30px;
+    margin: 10px 0 20px 0;
     font-family: 'Stalinist One', cursive;
     letter-spacing: 3px;
     font-size: 1.5rem;
 }
 
-.tercera article{
-    height: 75vh;
-    width: 80%;
-    margin: auto 0 auto 0;
-    letter-spacing: 2px;
-    padding: 12px 6px 6px 10px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 6px;
-    border: 2px outset white;
-    color: black;
-    min-width: 400px;
-    max-width: 850px;
-    overflow: auto;
+.contain{
+    height: 20vh;
+    width: 94%;
+    margin: 2px auto;
+    *background-color: red;
+}
+
+.p2, .p4{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.p2, .p3, .p4{
+    *height: 22vh;
+}
+/**************************************
+.p1{background-color: blue;}
+.p2{background-color: green;}
+.p3{background-color: yellow;}
+.p4{background-color: brown;}
+****************************************/
+
+.parrafo{
+    height: 100%;
+    width: 54%;
+    min-width: 520px;
+    background-color: gray;
+    padding: 15px 5px 0 5px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    background-image: url(img/fondoNegroRed.jpg);
+
+}
+
+.first{
+    *width: 47%;
+    font-size: 0.89rem;
+}
+
+.resto{
+    padding-top: 20px;
+    line-height: 30px;
 }
 
 #modal {
