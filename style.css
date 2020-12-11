@@ -342,7 +342,7 @@ nav ul li a:active{
 .contain{
     height: 20vh;
     width: 94%;
-    margin: 2px auto;
+    margin-top: 2px;
     *background-color: red;
 }
 
@@ -689,9 +689,7 @@ nav ul li a:active{
         font-size: 1.8rem;
     }
 
-    .tercera article{
-        font-size: 1.45rem;
-    }
+    
 
     #ventana{
         height: 92vh;
@@ -714,6 +712,16 @@ nav ul li a:active{
         top: 10%;
         left: 15%;
       }
+
+      .parrafo{
+        width: 60%;
+        line-height: 36px;
+        letter-spacing: 2px;
+    }
+
+    .resto{
+        padding-top: 40px;
+    }
 }
 
 @media (max-width: 950px){
@@ -796,9 +804,7 @@ nav ul li a:active{
 }
 
 @media (max-width: 770px){
-    .tercera article{
-        font-size: 1.05rem;
-    }
+    
 
     #imagenes{
         height: 70%;
@@ -811,6 +817,21 @@ nav ul li a:active{
         top: 5%;
         left: 5.5%;
       }
+
+    .contain{
+        display: flex;
+        justify-content: center;
+    }  
+
+    .parrafo{
+        width: 90%;
+        line-height: 29px;
+        letter-spacing: 1px;
+    }
+
+    .resto{
+        padding-top: 30px;
+    }
 }
 
 @media (max-width: 750px){
@@ -911,9 +932,7 @@ nav ul li a:active{
         font-size: 1.5rem;
     }
 
-    .tercera article{
-        font-size: 0.8rem;
-    }
+   
 
     #modal{
         height: 150vh;
@@ -955,6 +974,27 @@ nav ul li a:active{
         font-size: 0.77rem;
         padding: 10px;
         margin: 15px 0 0px 2px;
+    }
+
+    .contain{
+        width: 100%;
+    }
+
+    .parrafo{
+        width: 90%;
+        line-height: 20px;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+        min-width: 400px;
+    }
+
+    .first{
+        font-size: 0.75rem;
+    }
+
+    .resto{
+        padding-top: 20px;
+        line-height: 23px;
     }
 }
 
@@ -1036,6 +1076,15 @@ nav ul li a:active{
     .tarjeta{
         width: 32%;
     }
+
+    .parrafo{
+        font-size: 0.6rem;
+        padding-top: 10px;
+    }
+
+    .resto{
+        padding-top: 16px;
+    }
 }
 
 @media (max-width: 440px) {
@@ -1073,9 +1122,7 @@ nav ul li a:active{
         padding-top: 6%;
     }
 
-    .tercera article{
-        font-size: 0.89rem;
-    }
+    
 
     .tercera h2{
         font-size: 1.15rem;
@@ -1176,9 +1223,7 @@ nav ul li a:active{
         font-size: 1.3rem;
     }
 
-    .tercera article{
-        font-size: 0.85rem;
-    }
+    
 
     #modal{
         align-items: flex-start;
@@ -1230,11 +1275,6 @@ nav ul li a:active{
     font-size: 1.2rem;
 }
 
-    .tercera article{
-        font-size: 0.75rem;
-        min-width: 350px;
-    }
-
     #modal{
         align-items: flex-start;
     }
@@ -1278,6 +1318,50 @@ nav ul li a:active{
         margin: 20px 0 0px 2px;
         letter-spacing: 2px;
     }
+
+    .contain{
+        width: 100%;
+    }
+
+    .parrafo{
+        width: 96%;
+        line-height: 20px;
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        min-width: 340px;
+    }
+
+    .first{
+        font-size: 0.65rem;
+        line-height: 18px;
+    }
+
+    .resto{
+        padding-top: 14px;
+        line-height: 23px;
+    }
+
+    
+}
+
+@media(max-width: 370px){
+    .parrafo{
+        font-size: 0.7rem;
+        letter-spacing: 1px;
+        min-width: 300px;
+    }
+
+    .first{
+        font-size: 0.65rem;
+        line-height: 14px;
+        padding-top: 8px;
+        *letter-spacing: 1px;
+    }
+
+    .resto{
+        padding-top: 11px;
+        line-height: 17px;
+    }
 }
 
 @media (max-width: 330px) {
@@ -1303,9 +1387,26 @@ nav ul li a:active{
         height: 240px;
     }
 
-    .tercera article{
-       min-width: 300px;
+    .parrafo{
+        width: 96%;
+        line-height: 10px;
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+        min-width: 300px;
     }
+
+    .first{
+        font-size: 0.52rem;
+        line-height: 14px;
+        padding-top: 5px;
+    }
+
+    .resto{
+        padding-top: 11px;
+        line-height: 15px;
+    }
+
+  
 }
 
 @media (max-width: 320px) {
@@ -1397,17 +1498,16 @@ nav ul li a:active{
     .tercera h2{
         font-size: 0.95rem;
     }
-
-    .tercera article{
-        font-size: 0.75rem;
-        min-width: 270px;
-    }
     
     #imagenes{
         height: 50%;
     }
     .slider{
         height: 220px;
+      }
+
+      .parrafo{
+          min-width: 260px;
       }
 }
 
