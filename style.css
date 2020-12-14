@@ -373,7 +373,15 @@ nav ul li a:active{
     letter-spacing: 0.5px;
     line-height: 25px;
     background-image: url(img/fondoNegroRed.jpg);
+    transition: all 0.3s;
+    cursor: pointer;
 
+}
+
+.parrafo:hover{
+    transform: scale(1.08);
+    box-shadow: 26px 26px 31px -17px rgba(0,0,0,0.75);
+    
 }
 
 .first{
@@ -384,6 +392,62 @@ nav ul li a:active{
 .resto{
     padding-top: 20px;
     line-height: 30px;
+}
+
+.cuarta{
+    height: 65vh;
+}
+
+.cuarta div:first-child{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 58, 118); 
+    color: white;
+}
+
+.cuarta div:last-child{
+    height: 70%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(38, 58, 118); 
+}
+
+.cuarta div:last-child figure{
+    height: 90%;
+    width: 20%;
+    background-color: rgb(212, 220, 245);
+    text-align: center;
+    padding: 30px 0 10px 0;
+    border-radius: 10px;
+    border: 2px solid rgba(75, 119, 250, 0.5);
+    transition: all 0.3s;
+}
+
+.cuarta div:last-child figure:first-child:hover{
+    border: 4px solid rgb(52, 240, 115);
+    cursor: pointer;
+}
+
+.cuarta div:last-child figure:nth-child(2):hover{
+    border: 4px solid rgb(7, 45, 255);
+    cursor: pointer;
+}
+
+.cuarta div:last-child figure:last-child:hover{
+    border: 4px solid rgb(245, 56, 31);
+    cursor: pointer;
+}
+
+.cuarta div:last-child figure img{
+    height: 35%;
+    margin-bottom: 60px;
+}
+
+footer{
+    height: 35vh;
 }
 
 #modal {
@@ -403,9 +467,10 @@ nav ul li a:active{
     margin: 0 auto 0 10%;
     height: 95vh;
     width: 80%;
-    background-color: whitesmoke;
+    background-color: rgba(99, 164, 214, 0.7);
     border-radius: 8px;
-    background-image: url(img/cube-background-2484131_1920.jpg);
+    border: 2px solid white;
+    *background-image: url(img/cube-background-2484131_1920.jpg);
     *background-position: 210% 340%;/*fondoEjecutivo*/
     background-position: center center;
     overflow: auto;
