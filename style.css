@@ -408,6 +408,11 @@ nav ul li a:active{
     color: white;
 }
 
+.cuarta div:first-child h2{
+    font-family: 'Stalinist One', cursive;
+    font-size: 1.5rem;
+}
+
 .cuarta div:last-child{
     height: 70%;
     display: flex;
@@ -424,6 +429,7 @@ nav ul li a:active{
     border-radius: 10px;
     border: 2px solid rgba(75, 119, 250, 0.5);
     transition: all 0.3s;
+    word-wrap: break-word;
 }
 
 .cuarta div:last-child figure:first-child:hover{
@@ -448,6 +454,76 @@ nav ul li a:active{
 
 footer{
     height: 35vh;
+}
+
+footer #pie {
+    height: 90%;
+    background-color: #2071b2;
+    background-color: black;
+    display: flex;
+}
+
+footer #pie div{
+    height: 100%;
+    width: 33.33%;
+    *background-color:red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0 50px 0;
+    color: white;
+}
+
+footer #pie div:first-child{
+    justify-content: space-evenly;
+    
+}
+
+footer #pie div:first-child img{
+    height: 50%;
+}
+
+footer #pie div:first-child a{
+    text-decoration: none;
+    color: white;
+}
+
+footer #pie div:nth-child(2){
+    justify-content: space-around;
+    
+}
+
+footer #pie div:nth-child(2) ul{
+    list-style: none;
+}
+
+/* footer #pie div:nth-child(2) li{
+    *margin-right: 45px;
+} */
+
+footer #pie div:nth-child(2) a{
+    text-decoration: none;
+    color: white;
+}
+
+footer #pie div:nth-child(2) a:hover{
+    text-decoration: underline;
+}
+
+footer #pie div:last-child{
+    flex-direction: row;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+footer #pie div:last-child a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+}
+
+footer div:last-child{
+    text-align: center;
 }
 
 #modal {
@@ -787,6 +863,17 @@ footer{
     .resto{
         padding-top: 40px;
     }
+    
+    .cuarta div:last-child figure{
+        height: 60%;
+        font-size: 1rem;
+        word-wrap: break-word
+    }
+    
+    .cuarta div:last-child figure img{
+        height: 30%;
+        margin-bottom: 60px;
+    }
 }
 
 @media (max-width: 950px){
@@ -897,6 +984,12 @@ footer{
     .resto{
         padding-top: 30px;
     }
+
+    .cuarta div:last-child figure{
+        font-size: 0.9rem;
+        
+    }
+
 }
 
 @media (max-width: 750px){
@@ -908,7 +1001,7 @@ footer{
         display: none;
     }
     #drawer{
-        background-color: rgba(200, 200, 173, 0.7);
+        background-color: rgba(113, 145, 253, 0.7);
         position: absolute;
         height: 50vh;
         width: 30%;
@@ -1060,6 +1153,41 @@ footer{
     .resto{
         padding-top: 20px;
         line-height: 23px;
+    }
+
+    .cuarta div:first-child{
+        font-size: 0.8rem;
+    }
+    
+    .cuarta div:first-child h2{
+        font-size: 1rem;
+    }
+    
+    .cuarta div:last-child{
+        height: 70%;
+    }
+    
+    .cuarta div:last-child figure{
+        height: 90%;
+        width: 30%;
+        font-size: 0.8rem;
+    }
+    
+    .cuarta div:last-child figure img{
+        height: 30%;
+    }
+    
+
+
+    footer #pie{
+        font-size: 0.8rem;
+        height: 80%;
+    }
+
+    footer #pie div:last-child{
+        font-size: 0.7rem;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
 
@@ -1237,6 +1365,16 @@ footer{
         margin: 16px 0 0px 2px;
     }
 
+    
+    footer #pie{
+        font-size: 0.6rem;
+        height: 75%;
+    }
+
+    footer #pie div:last-child{
+        font-size: 0.6rem;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -1284,129 +1422,75 @@ footer{
         color: whitesmoke;
     }
 
-    .tercera h2 {
-        font-size: 1.3rem;
-    }
-
-    
-
-    #modal{
-        align-items: flex-start;
-    }
-     
-    #ventana{
-    
-        height: 95vh;
-        width: 98%;
-        margin: 0 auto;
+    .tercera h2{
+        font-size: 1.2rem;
     }
     
-    #cerrarModal{
-        height: 30px;
-        width: 53px;
-        color: white;
-        border-radius: 4px;
-        font-size: 0.67rem;
-        position: absolute;
-        left: 80%;
+        #modal{
+            align-items: flex-start;
+        }
+         
+        #ventana{
         
-    }
-    
-    #imagenes{
-        height: 70%;
-    }
-    
-    #imagenes h1{
-        font-size: 1rem;
-    }
-
-    .slider{
-        width: 100%;
-        height: 270px;
-        top: 10%;
-        left: 6%;
-      }
-
-      #texto {
-        font-size: 0.77rem;
-        padding: 10px;
-        margin: 20px 0 0px 2px;
-    }
-
-}
-
-@media (max-width: 380px){
-.tercera h2{
-    font-size: 1.2rem;
-}
-
-    #modal{
-        align-items: flex-start;
-    }
-     
-    #ventana{
-    
-        height: 95vh;
-        width: 98%;
-        margin: 0 auto;
-    }
-    
-    #cerrarModal{
-        height: 25px;
-        width: 48px;
-        color: white;
-        border-radius: 4px;
-        font-size: 0.57rem;
-        position: absolute;
-        left: 80%;
+            height: 95vh;
+            width: 98%;
+            margin: 0 auto;
+        }
         
-    }
+        #cerrarModal{
+            height: 25px;
+            width: 48px;
+            color: white;
+            border-radius: 4px;
+            font-size: 0.57rem;
+            position: absolute;
+            left: 80%;
+            
+        }
+        
+        #imagenes{
+            height: 50%;
+        }
+        
+        #imagenes h1{
+            font-size: 0.85rem;
+        }
     
-    #imagenes{
-        height: 50%;
-    }
+        .slider{
+            width: 100%;
+            height: 270px;
+            top: 10%;
+            left: 6%;
+          }
     
-    #imagenes h1{
-        font-size: 0.85rem;
-    }
-
-    .slider{
-        width: 100%;
-        height: 270px;
-        top: 10%;
-        left: 6%;
-      }
-
-      #texto {
-        font-size: 0.67rem;
-        padding: 10px;
-        margin: 20px 0 0px 2px;
-        letter-spacing: 2px;
-    }
-
-    .contain{
-        width: 100%;
-    }
-
-    .parrafo{
-        width: 96%;
-        line-height: 20px;
-        font-size: 0.7rem;
-        letter-spacing: 1px;
-        min-width: 340px;
-    }
-
-    .first{
-        font-size: 0.65rem;
-        line-height: 18px;
-    }
-
-    .resto{
-        padding-top: 14px;
-        line-height: 23px;
-    }
-
+          #texto {
+            font-size: 0.67rem;
+            padding: 10px;
+            margin: 20px 0 0px 2px;
+            letter-spacing: 2px;
+        }
     
+        .contain{
+            width: 100%;
+        }
+    
+        .parrafo{
+            width: 96%;
+            line-height: 20px;
+            font-size: 0.6rem;
+            letter-spacing: 1px;
+            min-width: 340px;
+        }
+    
+        .first{
+            font-size: 0.55rem;
+            line-height: 18px;
+        }
+    
+        .resto{
+            padding-top: 14px;
+            line-height: 23px;
+        }
 }
 
 @media(max-width: 370px){
