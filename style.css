@@ -336,7 +336,6 @@ nav ul li a:active{
 }
 
 .tercera h2{
-    margin: 10px 0 20px 0;
     font-family: 'Stalinist One', cursive;
     letter-spacing: 3px;
     font-size: 1.5rem;
@@ -357,12 +356,6 @@ nav ul li a:active{
 .p2, .p3, .p4{
     *height: 22vh;
 }
-/**************************************
-.p1{background-color: blue;}
-.p2{background-color: green;}
-.p3{background-color: yellow;}
-.p4{background-color: brown;}
-****************************************/
 
 .parrafo{
     height: 100%;
@@ -891,10 +884,62 @@ footer div:last-child{
     
    
     #marquesina{
-       
+       height: 60%;
         width: 40%;
-        margin-bottom: -10px;
-        font-size: 0.93rem;  
+        *margin-bottom: -10px;
+        font-size: 0.7rem;  
+    }
+
+    .segunda div h1, .tercera h2, .cuarta div:first-child h2{
+       font-size: 0.93rem;
+    }
+
+    .contain{
+        height: 20vh;
+        width: 94%;
+        margin-top: 0;
+    }
+    
+    .p2, .p4{
+        display: flex;
+        justify-content: flex-end;
+    }
+    
+    .p2, .p3, .p4{
+        *height: 22vh;
+    }
+    
+    .parrafo{
+        height: 100%;
+        width: 80%;
+        min-width: 520px;
+        padding: 15px 5px 0 5px;
+        text-align: center;
+        color: white;
+        letter-spacing: 0.5px;
+        line-height: 15px;
+        font-size: 0.79rem;
+    
+    }
+    
+    .first{
+        *width: 47%;
+        font-size: 0.69rem;
+    }
+    
+    .resto{
+        padding-top: 15px;
+        line-height: 15px;
+    }
+    
+    .cuarta div:first-child span{
+        font-size: 0.75rem;
+    }
+
+    .cuarta div:last-child figure{
+        height: 100%;
+        width: 20%;
+        font-size: 0.7rem;
     }
     
 }
