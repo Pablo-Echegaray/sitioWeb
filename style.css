@@ -371,6 +371,7 @@ nav ul li a:active{
     background-image: url(img/fondoNegroRed.jpg);
     transition: all 0.3s;
     cursor: pointer;
+    overflow: auto;
 
 }
 
@@ -452,73 +453,74 @@ footer{
     height: 35vh;
 }
 
-footer #pie {
-    height: 90%;
-    background-color: #2071b2;
+#foot{
     background-color: black;
     display: flex;
+    height: 90%;
+    justify-content: space-around;
+    align-items: center;
 }
 
-footer #pie div{
+.foot-part{
     height: 100%;
-    width: 33.33%;
-    *background-color:red;
+    width: 33%;
+    *background-color: white;
+}
+
+#foot .foot-part{
+    height: 80%;
+    *background-color: #2071b2;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 30px 0 50px 0;
-    color: white;
-}
-
-footer #pie div:first-child{
-    justify-content: space-evenly;
-    
-}
-
-footer #pie div:first-child img{
-    height: 50%;
-}
-
-footer #pie div:first-child a{
-    text-decoration: none;
-    color: white;
-}
-
-footer #pie div:nth-child(2){
     justify-content: space-around;
-    
+    align-items:center;
 }
 
-footer #pie div:nth-child(2) ul{
-    list-style: none;
+#link-reload{
+    *background-color: whitesmoke;
+    *height: 30%;
 }
 
-/* footer #pie div:nth-child(2) li{
-    *margin-right: 45px;
-} */
-
-footer #pie div:nth-child(2) a{
-    text-decoration: none;
-    color: white;
+#list-links{
+    height: 65%;
+    *background-color: blue;
 }
 
-footer #pie div:nth-child(2) a:hover{
-    text-decoration: underline;
+#list-links ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-footer #pie div:last-child{
+#foot .foot-part:last-child{
     flex-direction: row;
     justify-content: center;
+    color: white;
     font-size: 0.8rem;
 }
 
-footer #pie div:last-child a{
-    text-decoration: none;
-    color: white;
-    margin-left: 10px;
+#span-dev{
+    *background-color:blue;
+    width: 27%;
 }
 
-footer div:last-child{
+.foot-part a{
+    text-decoration: none;
+    color: white;
+}
+
+.foot-part a:hover{
+    text-decoration: underline;
+}
+
+#img-icon{
+    height: 15%;
+    width: 15%;
+}
+
+#copyright{
+    background-color: gray;
     text-align: center;
 }
 

@@ -210,3 +210,16 @@ const matrizLista = [
 ];
 
 console.log(objTextos.texto1, "espacio", matrizLista[0]);
+
+//----------------------------------------------------
+
+let figuras = document.querySelectorAll("figure");
+console.log(figuras);
+console.log(location);
+/* atributo = document.createAttribute("target");
+atributo.value = "_blank";
+figuras[1].setAttribute(atributo); */
+
+figuras[1].addEventListener("click", () => {
+  location.href = "https://www.facebook.com/Redes-Echeverria-109382830517898";
+});
