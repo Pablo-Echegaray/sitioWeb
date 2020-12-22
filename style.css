@@ -393,6 +393,7 @@ nav ul li a:active{
 
 .cuarta{
     height: 65vh;
+    background-color: rgb(38, 58, 118); 
 }
 
 .cuarta div:first-child{
@@ -401,7 +402,6 @@ nav ul li a:active{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(38, 58, 118); 
     color: white;
 }
 
@@ -414,7 +414,7 @@ nav ul li a:active{
     height: 70%;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(38, 58, 118); 
+    
 }
 
 .cuarta div:last-child figure{
@@ -515,8 +515,8 @@ footer{
 }
 
 #img-icon{
-    height: 15%;
-    width: 15%;
+    height: 60px;
+    width: 60px;
 }
 
 #copyright{
@@ -858,8 +858,30 @@ footer{
     header nav ul {
         width: 90%;
     }
-
     
+    .cuarta div:last-child{
+        height: 50%;
+        
+    }
+    .cuarta div:last-child figure{
+        font-size: 0.7rem;
+    }
+
+    #foot{
+        height: 50%;
+        font-size: 0.9rem;
+    }
+    #foot .foot-part:last-child{
+        height: 40%;
+        flex-direction: column;
+        justify-content: space-around;
+        color: white;
+        font-size: 0.8rem;
+    }
+
+    #span-dev{
+        width: 90%;
+    }
 }
 
 @media (max-width: 929px){
@@ -1199,18 +1221,18 @@ footer{
     .cuarta div:last-child figure img{
         height: 30%;
     }
-    
 
-
-    footer #pie{
-        font-size: 0.8rem;
-        height: 80%;
+    #foot{
+        height: 90%;
+        font-size: 0.9rem;
     }
 
-    footer #pie div:last-child{
-        font-size: 0.7rem;
-        flex-direction: column;
-        justify-content: space-evenly;
+    #foot .foot-part:first-child{
+        height: 50%;
+    }
+
+    #span-dev{
+        width: 100%;
     }
 }
 
@@ -1270,6 +1292,20 @@ footer{
     .resto{
         padding-top: 16px;
     }
+
+    #foot{
+        height: 90%;
+        font-size: 0.7rem;
+    }
+
+    #foot .foot-part:first-child{
+        height: 50%;
+    }
+    #foot .foot-part:last-child{
+        font-size: 0.6rem;
+        height: 25%;
+    }
+    
 }
 
 @media (max-width: 440px) {
