@@ -1159,11 +1159,12 @@ footer{
     }
     
     #imagenes{
-        height: 55%;
+        height: 60%;
     }
     
     #imagenes h1{
         font-size: 1rem;
+        margin-top: 50px;
     }
 
     .slider{
@@ -1367,7 +1368,7 @@ footer{
     }
     
     #imagenes{
-        height: 53%;
+        *height: 60%;
     }
     
     #imagenes h1{
