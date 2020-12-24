@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Stalinist+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 * {
     box-sizing: border-box;
@@ -499,6 +500,11 @@ footer{
     justify-content: center;
     color: white;
     font-size: 0.8rem;
+}
+
+#link-github{
+    font-family: 'Satisfy', cursive;
+    font-size: 0.9rem;
 }
 
 #span-dev{
@@ -1082,6 +1088,7 @@ footer{
         z-index: 12;
         border: none;
         background: transparent;
+        color: white;
         
     }
 
