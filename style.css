@@ -1051,15 +1051,15 @@ footer{
         display: none;
     }
     #drawer{
-        background-color: rgba(113, 145, 253, 0.7);
+        background-color: rgba(255, 255, 255, 0.9);
         position: absolute;
         height: 50vh;
         width: 30%;
         left: 70%;
         border-radius: 8px;
         min-width: 200px;
-        border-bottom: 2px solid darkblue;
-        border-left: 2px solid darkblue;
+        border-bottom: 2px solid rgb(37, 70, 177);
+        border-left: 2px solid rgb(37, 70, 177);
         position: fixed;
         z-index: 9;
         display: none;     
@@ -1073,7 +1073,7 @@ footer{
     }
 
     #drawer ul li a {
-        color: rgb(30,30,55);
+        color: rgb(37, 70, 177);
         
     }
 
